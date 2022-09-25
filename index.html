@@ -97,24 +97,53 @@ background: orange;
 ">
 <div class="h2" id="h2" style="z-index: 5;
 position: fixed;
-left:320px;
+left:310px;
 top: 450px;
 visibility: hidden;
-font-size:30px;">These are Balls</div>
+font-size:30px;">I know how to make circles.</div>
+
+<div class="h5" id="h5" style="z-index: 5;
+position: fixed;
+left:20px;
+top: 150px;
+visibility: hidden;
+font-size:30px;">Watch the circles move.</div>
 
 <div class="h3" id="h3" style="z-index: 5;
 position: fixed;
-left: 20px;
-top: 150px;
+left: 50px;
+top: 100px;
 visibility: hidden;
-font-size:30px;">These are Moving Balls</div>
+font-size:30px;">I know how to make objects move.</div>
 
 <div class="h4" id="h4" style="z-index: 5;
+position: fixed;
+left:50px;
+top: 160px;
+visibility: hidden;
+font-size:30px;">I know how to make the circles stop</div>
+
+<div class="h6" id="h6" style="z-index: 5;
+position: fixed;
+left:20px;
+top: 210px;
+visibility: hidden;
+font-size:30px;">moving and place the circles exactly</div>
+
+<div class="h7" id="h7" style="z-index: 5;
 position: fixed;
 left:20px;
 top: 260px;
 visibility: hidden;
-font-size:30px;">These balls are arranged into a pattern</div>
+font-size:30px;">where I want them.</div>
+
+<div class="h8" id="h8" style="z-index: 5;
+position: fixed;
+left:200px;
+top: 500px;
+visibility: hidden;
+font-size:30px;">As you can see, I've placed the circles in a pattern.</div>
+ 
 
 
 </div> <!--closing tag for ball2-->
@@ -369,7 +398,57 @@ setTimeout(() => {
 
   // 👇️ hides element (still takes up space on page)
   // box.style.visibility = 'hidden';
-}, 12000);
+}, 9000);
+
+setTimeout(() => {
+  const h6 = document.getElementById('h6');
+
+  // 👇️ removes element from DOM
+  h6.style.visibility = 'visible';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 9000);
+
+setTimeout(() => {
+  const h7 = document.getElementById('h7');
+
+  // 👇️ removes element from DOM
+  h7.style.visibility = 'visible';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 9000);
+
+setTimeout(() => {
+  const h8 = document.getElementById('h8');
+
+  // 👇️ removes element from DOM
+  h8.style.visibility = 'visible';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 11000);
+
+setTimeout(() => {
+  const h5 = document.getElementById('h5');
+
+  // 👇️ removes element from DOM
+  h5.style.visibility = 'visible';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 2000);
+
+setTimeout(() => {
+  const h5 = document.getElementById('h5');
+
+  // 👇️ removes element from DOM
+  h5.style.display = 'none';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 4000); 
  
 
 
