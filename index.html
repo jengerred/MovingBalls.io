@@ -39,7 +39,7 @@ width: 100px;
 height: 100px;
 border-radius: 50%;
 background: orange;
-">      <!--This is how you display  ball2-->
+">      <!--This is how you display  ball2 and (top: 300px) is how you position it to start on the page at 300px down -->
 <div class="ball3"  id="ball3" style= "
 z-index: 5;
 position:fixed;
@@ -113,8 +113,8 @@ font-size:30px;">Watch the circles move.</div>
 position: fixed;
 left: 50px;
 top: 100px;
-visibility: hidden;
-font-size:30px;">I know how to make objects move.</div>
+visibility: hidden; 
+font-size:30px;">I know how to make objects move.</div><!--(visibility: hidden:)This is how you keep visibility hidden until you want the text to show up-->
 
 <div class="h4" id="h4" style="z-index: 5;
 position: fixed;
@@ -146,7 +146,7 @@ font-size:30px;">As you can see, I've placed the circles in a pattern.</div>
  
 
 
-</div> <!--closing tag for ball2-->
+
  </div> <!--closing tag for container-->
 </div> <!-- 2nd closing tag for container-->
 
@@ -159,8 +159,8 @@ font-size:30px;">As you can see, I've placed the circles in a pattern.</div>
   
     setInterval(moveBall, 1000);
 
-    function moveBall(){
-        var Xmin = 0;
+    function moveBall(){        /*This is how the ball moves*/
+        var Xmin = 0;       
         var Xmax = 500;
    
      
@@ -168,7 +168,7 @@ font-size:30px;">As you can see, I've placed the circles in a pattern.</div>
      var Ymax = 200;
 
     if(positionX >= 500){
-        clearInterval(moveBall, 1000);
+        clearInterval(moveBall, 1000);      /*This is how to get the ball to stop moving*/
     }
     else{
        positionX = positionX + velocity;
